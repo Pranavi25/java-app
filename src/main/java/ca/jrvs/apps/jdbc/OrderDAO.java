@@ -1,7 +1,5 @@
 package ca.jrvs.apps.jdbc;
 
-
-
 import ca.jrvs.apps.twitter.util.DataAccessObject;
 
 import java.sql.Connection;

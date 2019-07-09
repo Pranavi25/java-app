@@ -1,7 +1,5 @@
 package ca.jrvs.apps.twitter.util;
 
-
-
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -35,3 +33,4 @@ public abstract class DataAccessObject <T extends DataTransferObject> {
         }
     }
 }
+
