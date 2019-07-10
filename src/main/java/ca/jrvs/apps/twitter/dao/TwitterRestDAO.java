@@ -5,6 +5,8 @@ import ca.jrvs.apps.twitter.dto.Tweet;
 import ca.jrvs.apps.twitter.util.JsonUtil;
 import org.apache.http.HttpResponse;
 import org.apache.http.util.EntityUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -12,7 +14,6 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
-
 
 @Repository
 public class TwitterRestDAO implements CrdRepository<Tweet, String> {
@@ -32,7 +33,7 @@ public class TwitterRestDAO implements CrdRepository<Tweet, String> {
 
     private HttpHelper httpHelper;
 
-
+    @Autowired
     public TwitterRestDAO(HttpHelper httpHelper) {
         this.httpHelper = httpHelper;
     }
@@ -53,12 +54,7 @@ public class TwitterRestDAO implements CrdRepository<Tweet, String> {
         }
 
         //Execute HTTP Request
-        HttpResponse response = null;
-        try {
-            response = (HttpResponse) httpHelper.httpPost(uri);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        HttpResponse response = httpHelper.httpPost(uri);
 
         //Validate response and deser response to Tweet object
         return parseResponseBody(response, HTTP_OK);
@@ -76,14 +72,14 @@ public class TwitterRestDAO implements CrdRepository<Tweet, String> {
 
         //Execute HTTP Request
         HttpResponse response;
-        response = (HttpResponse) httpHelper.httpGet(uri);
+        response = httpHelper.httpGet(uri);
 
         //Validate response and deser response to Tweet object
         return parseResponseBody(response, HTTP_OK);
     }
 
     @Override
-    public Tweet deleteById(String id) throws IOException {
+    public Tweet deleteById(String id) {
         //Construct URI
         URI uri;
         try {
@@ -94,8 +90,7 @@ public class TwitterRestDAO implements CrdRepository<Tweet, String> {
 
         //Execute HTTP Request
         HttpResponse response;
-
-        response = (HttpResponse) httpHelper.httpPost(uri);
+        response = httpHelper.httpPost(uri);
 
         //Validate response and deser response to Tweet object
         return parseResponseBody(response, HTTP_OK);
@@ -116,10 +111,9 @@ public class TwitterRestDAO implements CrdRepository<Tweet, String> {
     }
 
     /**
+     * Construct a twitter SHOW URI https://api.twitter.com/1.1/statuses/show.json?id=210462857140252672
      *
-     * @param id
-     * @return
-     * @throws URISyntaxException
+     * @throws URISyntaxException when URI is invalid
      */
     protected URI getShowUri(String id) throws URISyntaxException {
         StringBuilder sb = new StringBuilder();
@@ -131,19 +125,22 @@ public class TwitterRestDAO implements CrdRepository<Tweet, String> {
     }
 
     /**
+     * Construct a twitter POST URI
+     * e.g. https://api.twitter.com/1.1/statuses/update.json?status=some_text&lat=11.11&long=-22.22
      *
-     * @param tweet
-     * @return
-     * @throws URISyntaxException
-     * @throws UnsupportedEncodingException
+     * @throws URISyntaxException when URI is invalid
+     * @throws UnsupportedEncodingException when failed to encode text
      */
-    protected URI getPostUri(Tweet tweet) throws URISyntaxException, UnsupportedEncodingException {
+    protected URI getPostUri(Tweet tweet)
+            throws URISyntaxException, UnsupportedEncodingException {
         String text = tweet.getText();
         Double longitude = tweet.getCoordinates().getCoordinates().get(0);
         Double latitude = tweet.getCoordinates().getCoordinates().get(1);
 
         StringBuilder sb = new StringBuilder();
-        sb.append(API_BASE_URI).append(POST_PATH).append(QUERY_SYM);
+        sb.append(API_BASE_URI)
+                .append(POST_PATH)
+                .append(QUERY_SYM);
 
         appendQueryParam(sb, "status", URLEncoder.encode(text, StandardCharsets.UTF_8.name()), true);
         appendQueryParam(sb, "long", longitude.toString(), false);
@@ -153,11 +150,7 @@ public class TwitterRestDAO implements CrdRepository<Tweet, String> {
     }
 
     /**
-     *
-     * @param sb
-     * @param key
-     * @param value
-     * @param firstParam
+     * helper function to append one query param
      */
     private void appendQueryParam(StringBuilder sb, String key, String value,
                                   boolean firstParam) {
@@ -178,6 +171,11 @@ public class TwitterRestDAO implements CrdRepository<Tweet, String> {
         //Check response status
         int status = response.getStatusLine().getStatusCode();
         if (status != expectedStatusCode) {
+            try {
+                System.out.println(EntityUtils.toString(response.getEntity()));
+            } catch (IOException e) {
+                System.out.println("Response has no entity");
+            }
             throw new RuntimeException("Unexpected HTTP status:" + status);
         }
 

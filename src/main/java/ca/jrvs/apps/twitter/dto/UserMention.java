@@ -1,63 +1,79 @@
 package ca.jrvs.apps.twitter.dto;
 
-import java.math.BigInteger;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import java.util.List;
 
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+        "name",
+        "indices",
+        "screen_name",
+        "id",
+        "id_str"
+})
 public class UserMention {
+
+    @JsonProperty("name")
     private String name;
-    private List<Integer> indices;
-    private String screen_name;
-    private BigInteger id;
-    private BigInteger id_str;
+    @JsonProperty("indices")
+    private List<Long> indices = null;
+    @JsonProperty("screen_name")
+    private String screenName;
+    @JsonProperty("id")
+    private Long id;
+    @JsonProperty("id_str")
+    private String idStr;
 
-    @Override
-    public String toString() {
-        return "UserMention{" +
-                "name='" + name + '\'' +
-                ", indices=" + indices +
-                ", screen_name='" + screen_name + '\'' +
-                ", id=" + id +
-                ", id_str=" + id_str +
-                '}';
-    }
-
+    @JsonProperty("name")
     public String getName() {
         return name;
     }
 
+    @JsonProperty("name")
     public void setName(String name) {
         this.name = name;
     }
 
-    public List<Integer> getIndices() {
+    @JsonProperty("indices")
+    public List<Long> getIndices() {
         return indices;
     }
 
-    public void setIndices(List<Integer> indices) {
+    @JsonProperty("indices")
+    public void setIndices(List<Long> indices) {
         this.indices = indices;
     }
 
-    public String getScreen_name() {
-        return screen_name;
+    @JsonProperty("screen_name")
+    public String getScreenName() {
+        return screenName;
     }
 
-    public void setScreen_name(String screen_name) {
-        this.screen_name = screen_name;
+    @JsonProperty("screen_name")
+    public void setScreenName(String screenName) {
+        this.screenName = screenName;
     }
 
-    public BigInteger getId() {
+    @JsonProperty("id")
+    public Long getId() {
         return id;
     }
 
-    public void setId(BigInteger id) {
+    @JsonProperty("id")
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public BigInteger getId_str() {
-        return id_str;
+    @JsonProperty("id_str")
+    public String getIdStr() {
+        return idStr;
     }
 
-    public void setId_str(BigInteger id_str) {
-        this.id_str = id_str;
+    @JsonProperty("id_str")
+    public void setIdStr(String idStr) {
+        this.idStr = idStr;
     }
+
 }
