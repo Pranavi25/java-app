@@ -1,8 +1,9 @@
 # Java project
 ## Overview
-[Java Grep App](#grep) - This implements searching for certain regex patterns and return them in a output file.
-[JDBC](#jdbc) - This implements a use case to understand JDBC connectivity.
-[Twitter CLI App](#twitter) - This implements spring boot framework to create tweets and post them on twitter account.
+
+ - [Java Grep App](#grep) - This implements searching for certain regex patterns and return them in a output file.
+ - [JDBC](#jdbc) - This implements a use case to understand JDBC connectivity.
+ - [Twitter CLI App](#twitter) - This implements spring boot framework to create tweets and post them on twitter account.
 
  
 <a name="grep"><a/>
@@ -107,5 +108,5 @@ JDBC executor - This is the main method where JDBC connection is called and the 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTI3NTAxMTldfQ==
+eyJoaXN0b3J5IjpbLTQ0NjUxMjI3MF19
 -->
