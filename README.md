@@ -97,9 +97,10 @@ JDBC executor - This is the main method where JDBC connection is called and the 
 Tweets are publicly visible by default, but senders can restrict message delivery to only their followers. Users can tweet via the Twitter website, compatible external applications (such as for smartphones or by Short Message Service (SMS) available in certain countries. In this project, the tweets can be created, read and deleted with spring framework implementation and twitter API.  
 
 ## Usage
-The Twitter platform offers access to that corpus of data, via APIs. Each API represents a facet of Twitter, and allows developers to build upon and extend their applications in new and creative ways. We implemented CRD 
+The Twitter platform offers access to that corpus of data, via APIs. Each API represents a facet of Twitter, and allows developers to build upon and extend their applications in new and creative ways. We implemented CRD I.e. Create, Read and Delete respectively. 
 
 ## Design and Implementation
+
 
 ### libraries
 
@@ -121,6 +122,6 @@ The Twitter platform offers access to that corpus of data, via APIs. Each API re
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzE2MDQwMzAsLTE1NDIzNDEwOTAsMj
-Q1MjYxNTEwLC00NDY1MTIyNzBdfQ==
+eyJoaXN0b3J5IjpbMjAxNDg2NTI3MywtMTU0MjM0MTA5MCwyND
+UyNjE1MTAsLTQ0NjUxMjI3MF19
 -->
