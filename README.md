@@ -94,7 +94,7 @@ JDBC executor - This is the main method where JDBC connection is called and the 
 # Twitter CLI App
 
 ## Introduction
-
+Tweets are publicly visible by default, but senders can restrict message delivery to only their followers. Users can tweet via the Twitter website, compatible external applications (such as for [smartphones](https://en.wikipedia.org/wiki/Smartphone "Smartphone")), or by [Short Message Service](https://en.wikipedia.org/wiki/Short_Message_Service "Short Message Service") (SMS) available in certain countries
 
 ## Usage
 
@@ -120,6 +120,6 @@ JDBC executor - This is the main method where JDBC connection is called and the 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDIzNDEwOTAsMjQ1MjYxNTEwLC00ND
-Y1MTIyNzBdfQ==
+eyJoaXN0b3J5IjpbLTIwMjc1MDc1MjEsLTE1NDIzNDEwOTAsMj
+Q1MjYxNTEwLC00NDY1MTIyNzBdfQ==
 -->
