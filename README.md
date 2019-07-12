@@ -95,11 +95,16 @@ JDBC executor - This is the main method where JDBC connection is called and the 
 
 ## Introduction
 
+
 ## Usage
 
 ## Design and Implementation
 
 ### libraries
+
+### Diagram
+
+## Enhancement
 
 
 <a name="twitter"> </a>
@@ -115,5 +120,6 @@ JDBC executor - This is the main method where JDBC connection is called and the 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ1MjYxNTEwLC00NDY1MTIyNzBdfQ==
+eyJoaXN0b3J5IjpbLTE1NDIzNDEwOTAsMjQ1MjYxNTEwLC00ND
+Y1MTIyNzBdfQ==
 -->
