@@ -104,6 +104,18 @@ The Twitter platform offers access to that corpus of data, via APIs. Each API re
 
 ### libraries
 
+    org.apache.http.HttpResponse;
+import org.apache.http.util.EntityUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
+
 ### Diagram
 ![
 ](https://lh3.googleusercontent.com/q1HDW4inhwt-AZlgFE0eFdR-wA_Xd4jyUDrZJUnf_8j7ao0PPXuhsfQlp6nNuRTkDgyjlr_rAcU "Twitter API")
@@ -123,6 +135,6 @@ The Twitter platform offers access to that corpus of data, via APIs. Each API re
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY4MTgzMjY5LDIwMTQ4NjUyNzMsLTE1ND
-IzNDEwOTAsMjQ1MjYxNTEwLC00NDY1MTIyNzBdfQ==
+eyJoaXN0b3J5IjpbMTU5MzY4MDE3NSwyMDE0ODY1MjczLC0xNT
+QyMzQxMDkwLDI0NTI2MTUxMCwtNDQ2NTEyMjcwXX0=
 -->
