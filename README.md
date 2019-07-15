@@ -105,7 +105,8 @@ The Twitter platform offers access to that corpus of data, via APIs. Each API re
 ### libraries
 
 ### Diagram
-
+![
+](https://lh3.googleusercontent.com/q1HDW4inhwt-AZlgFE0eFdR-wA_Xd4jyUDrZJUnf_8j7ao0PPXuhsfQlp6nNuRTkDgyjlr_rAcU "Twitter API")
 ## Enhancement
 
 
@@ -122,6 +123,6 @@ The Twitter platform offers access to that corpus of data, via APIs. Each API re
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxNDg2NTI3MywtMTU0MjM0MTA5MCwyND
-UyNjE1MTAsLTQ0NjUxMjI3MF19
+eyJoaXN0b3J5IjpbOTY4MTgzMjY5LDIwMTQ4NjUyNzMsLTE1ND
+IzNDEwOTAsMjQ1MjYxNTEwLC00NDY1MTIyNzBdfQ==
 -->
