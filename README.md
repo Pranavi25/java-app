@@ -101,6 +101,11 @@ The Twitter platform offers access to that corpus of data, via APIs. Each API re
 
 ## Design and Implementation
 
+ - Interface
+ - service
+ - Access
+ - Storage
+ 
 
 ### libraries
 
@@ -135,7 +140,7 @@ The Twitter platform offers access to that corpus of data, via APIs. Each API re
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI3ODUxMjEzLC0yNzAyNDI1MDYsMjAxND
+eyJoaXN0b3J5IjpbOTU3Mjc5NzUyLC0yNzAyNDI1MDYsMjAxND
 g2NTI3MywtMTU0MjM0MTA5MCwyNDUyNjE1MTAsLTQ0NjUxMjI3
 MF19
 -->
