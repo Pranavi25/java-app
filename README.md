@@ -114,6 +114,7 @@ The Twitter platform offers access to that corpus of data, via APIs. Each API re
     java.net.URISyntaxException
     java.net.URLEncoder
     java.nio.charset.StandardCharsets
+    org.springframework.boot.autoconfigure.SpringBootApplication
 
 ### Diagram
 ![
@@ -134,6 +135,7 @@ The Twitter platform offers access to that corpus of data, via APIs. Each API re
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3MDI0MjUwNiwyMDE0ODY1MjczLC0xNT
-QyMzQxMDkwLDI0NTI2MTUxMCwtNDQ2NTEyMjcwXX0=
+eyJoaXN0b3J5IjpbNzI3ODUxMjEzLC0yNzAyNDI1MDYsMjAxND
+g2NTI3MywtMTU0MjM0MTA5MCwyNDUyNjE1MTAsLTQ0NjUxMjI3
+MF19
 -->
