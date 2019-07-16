@@ -124,10 +124,11 @@ This will delete the tweet by the given id. We can delete multiple id's tweets b
 ## Design and Implementation
 
  - Interface
- Twitter CLI service class resides in the interface which is implemented by Twitter Servi
- 
+ Twitter CLI service class resides in the interface which is implemented by Twitter Service.  It is used to provide the parsed data to it's corresponding methods.
 
  - service
+ The main logic is implemented here
+
  - Access
  - Storage
  
@@ -165,7 +166,7 @@ This will delete the tweet by the given id. We can delete multiple id's tweets b
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0MzM0MDEwNCwxODczNDk3NjM4LDk1Nz
-I3OTc1MiwtMjcwMjQyNTA2LDIwMTQ4NjUyNzMsLTE1NDIzNDEw
-OTAsMjQ1MjYxNTEwLC00NDY1MTIyNzBdfQ==
+eyJoaXN0b3J5IjpbLTE1NjQyNDYxMjMsMTg3MzQ5NzYzOCw5NT
+cyNzk3NTIsLTI3MDI0MjUwNiwyMDE0ODY1MjczLC0xNTQyMzQx
+MDkwLDI0NTI2MTUxMCwtNDQ2NTEyMjcwXX0=
 -->
