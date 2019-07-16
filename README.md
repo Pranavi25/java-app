@@ -103,7 +103,12 @@ There are three main usages:
 - Post Tweet
 -  Show Tweet
 -  Delete Tweet
-- 
+
+#### Post Tweet
+This creates a tweet with the coordinates or geotag which is then converted to a JSON format 
+
+
+
  
 
 ## Design and Implementation
@@ -149,7 +154,7 @@ There are three main usages:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1NjkxOTc0MiwxODczNDk3NjM4LDk1Nz
+eyJoaXN0b3J5IjpbLTE0MzE3OTMwMCwxODczNDk3NjM4LDk1Nz
 I3OTc1MiwtMjcwMjQyNTA2LDIwMTQ4NjUyNzMsLTE1NDIzNDEw
 OTAsMjQ1MjYxNTEwLC00NDY1MTIyNzBdfQ==
 -->
