@@ -114,7 +114,8 @@ This will enable to view the tweet with the given id and their specified fields 
 created_at,  hashtags, user_mentions, coordinates, retweet_count, favorited and etc.
 
 #### Delete Tweet
-This will delete the tweet by the given id. We can delete multiple id's tweets by providing them with comma
+This will delete the tweet by the given id. We can delete multiple id's tweets by providing them with comma separation.
+
 
 
 
@@ -123,6 +124,7 @@ This will delete the tweet by the given id. We can delete multiple id's tweets b
 ## Design and Implementation
 
  - Interface
+ Twitter CLI service class resides in the interface which is implemented by Twitter Servi
  
 
  - service
@@ -163,7 +165,7 @@ This will delete the tweet by the given id. We can delete multiple id's tweets b
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTcxNzEwODQyLDE4NzM0OTc2MzgsOTU3Mj
-c5NzUyLC0yNzAyNDI1MDYsMjAxNDg2NTI3MywtMTU0MjM0MTA5
-MCwyNDUyNjE1MTAsLTQ0NjUxMjI3MF19
+eyJoaXN0b3J5IjpbLTU0MzM0MDEwNCwxODczNDk3NjM4LDk1Nz
+I3OTc1MiwtMjcwMjQyNTA2LDIwMTQ4NjUyNzMsLTE1NDIzNDEw
+OTAsMjQ1MjYxNTEwLC00NDY1MTIyNzBdfQ==
 -->
