@@ -95,10 +95,16 @@ JDBC executor - This is the main method where JDBC connection is called and the 
 
 ## Introduction
 
-Twitter Command Line Interface allows the user to interact through Post, Show and Delete tweets on twitter. This implementation uses the users developer keys to a
+Twitter Command Line Interface allows the user to interact through Post, Show and Delete tweets on twitter. This implementation uses the users developer keys. 
 
 ## Usage
-The Twitter platform offers access to that corpus of data, via APIs. Each API represents a facet of Twitter, and allows developers to build upon and extend their applications in new and creative ways. We implemented CRD I.e. Create, Read and Delete respectively. 
+There are three main usages:
+
+- Post Tweet
+-  Show Tweet
+-  Delete Tweet
+- 
+ 
 
 ## Design and Implementation
 
@@ -143,7 +149,7 @@ The Twitter platform offers access to that corpus of data, via APIs. Each API re
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5MzU3MDQ2NCwxODczNDk3NjM4LDk1Nz
+eyJoaXN0b3J5IjpbLTQ1NjkxOTc0MiwxODczNDk3NjM4LDk1Nz
 I3OTc1MiwtMjcwMjQyNTA2LDIwMTQ4NjUyNzMsLTE1NDIzNDEw
 OTAsMjQ1MjYxNTEwLC00NDY1MTIyNzBdfQ==
 -->
