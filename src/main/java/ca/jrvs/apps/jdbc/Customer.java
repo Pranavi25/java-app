@@ -1,7 +1,5 @@
 package ca.jrvs.apps.jdbc;
 
-import ca.jrvs.apps.twitter.util.DataTransferObject;
-
 public class Customer implements DataTransferObject {
     private long id;
     private String first_Name;
@@ -35,5 +33,20 @@ public class Customer implements DataTransferObject {
     public void setState(String state){this.state = state;}
     public String getZipCode(){return zipCode;}
     public void setZipCode(String zipCode){this.zipCode = zipCode;}
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "id=" + id +
+                ", first_Name='" + first_Name + '\'' +
+                ", last_Name='" + last_Name + '\'' +
+                ", email='" + email + '\'' +
+                ", phone='" + phone + '\'' +
+                ", address='" + address + '\'' +
+                ", city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", zipCode='" + zipCode + '\'' +
+                '}';
+    }
 }
 

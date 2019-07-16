@@ -28,8 +28,8 @@ public class JsonUtil {
     }
 
     /**
-     * Parse JSON str to a java object
-     *
+     * Parse JSON string to a java object
+     *desierialize if failed on unknown properties
      * @throws IOException if failed to parse
      */
     public static <T> T toObjectFromJson(String json, Class c) throws IOException {

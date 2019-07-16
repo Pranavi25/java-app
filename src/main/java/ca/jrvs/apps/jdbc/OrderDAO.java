@@ -1,7 +1,5 @@
 package ca.jrvs.apps.jdbc;
 
-import ca.jrvs.apps.twitter.util.DataAccessObject;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -61,6 +59,16 @@ public class OrderDAO extends DataAccessObject<Order> {
             throw new RuntimeException(e);
         }
         return order;
+    }
+
+    @Override
+    public Order updateID(Order dto) {
+        return null;
+    }
+
+    @Override
+    public void delete(long id) {
+
     }
 }
 

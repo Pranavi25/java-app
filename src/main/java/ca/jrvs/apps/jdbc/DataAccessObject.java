@@ -1,4 +1,4 @@
-package ca.jrvs.apps.twitter.util;
+package ca.jrvs.apps.jdbc;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -16,6 +16,8 @@ public abstract class DataAccessObject <T extends DataTransferObject> {
     }
     public abstract T create(T dto);
     public abstract T findById(long id);
+    public abstract T updateID(T dto);
+    public abstract void delete(long id);
 
     protected int getLastVal(String sequence){
         int key =0;
