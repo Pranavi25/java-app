@@ -105,7 +105,9 @@ There are three main usages:
 -  Delete Tweet
 
 #### Post Tweet
-This creates a tweet with the coordinates or geotag which is then converted to a JSON format 
+This creates a tweet a short message along with the coordinates or geotag. For example:
+
+    e Hello this is my First tweet #Toronto #myfirsttweet 50.089
 
 
 
@@ -154,7 +156,7 @@ This creates a tweet with the coordinates or geotag which is then converted to a
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzE3OTMwMCwxODczNDk3NjM4LDk1Nz
-I3OTc1MiwtMjcwMjQyNTA2LDIwMTQ4NjUyNzMsLTE1NDIzNDEw
-OTAsMjQ1MjYxNTEwLC00NDY1MTIyNzBdfQ==
+eyJoaXN0b3J5IjpbLTE5NTAwNzgzMjUsMTg3MzQ5NzYzOCw5NT
+cyNzk3NTIsLTI3MDI0MjUwNiwyMDE0ODY1MjczLC0xNTQyMzQx
+MDkwLDI0NTI2MTUxMCwtNDQ2NTEyMjcwXX0=
 -->
