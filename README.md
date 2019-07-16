@@ -154,7 +154,8 @@ This will delete the tweet by the given id. We can delete multiple id's tweets b
 ![
 ](https://lh3.googleusercontent.com/q1HDW4inhwt-AZlgFE0eFdR-wA_Xd4jyUDrZJUnf_8j7ao0PPXuhsfQlp6nNuRTkDgyjlr_rAcU "Twitter API")
 ## Enhancement
-
+- Can have multiple implementations of DAO such as Product, Orders and salesperson
+-  
 
 <a name="twitter"> </a>
 
@@ -169,7 +170,7 @@ This will delete the tweet by the given id. We can delete multiple id's tweets b
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1NTM4NDc0NSwxODczNDk3NjM4LDk1Nz
-I3OTc1MiwtMjcwMjQyNTA2LDIwMTQ4NjUyNzMsLTE1NDIzNDEw
-OTAsMjQ1MjYxNTEwLC00NDY1MTIyNzBdfQ==
+eyJoaXN0b3J5IjpbLTk4ODQ1NzM2LDE4NzM0OTc2MzgsOTU3Mj
+c5NzUyLC0yNzAyNDI1MDYsMjAxNDg2NTI3MywtMTU0MjM0MTA5
+MCwyNDUyNjE1MTAsLTQ0NjUxMjI3MF19
 -->
