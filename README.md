@@ -107,7 +107,10 @@ There are three main usages:
 #### Post Tweet
 This creates a tweet a short message along with the coordinates or geotag. For example:
 
-    e Hello this is my First tweet #Toronto #myfirsttweet 50.089
+    Hello this is my First tweet #Toronto #myfirsttweet 50.089:-46.890
+The above tweet will be posted on the twitter.
+#### Show Tweet
+This will enable to view the tweet with th
 
 
 
@@ -156,7 +159,7 @@ This creates a tweet a short message along with the coordinates or geotag. For e
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTAwNzgzMjUsMTg3MzQ5NzYzOCw5NT
-cyNzk3NTIsLTI3MDI0MjUwNiwyMDE0ODY1MjczLC0xNTQyMzQx
-MDkwLDI0NTI2MTUxMCwtNDQ2NTEyMjcwXX0=
+eyJoaXN0b3J5IjpbNjQxNzQ4ODEzLDE4NzM0OTc2MzgsOTU3Mj
+c5NzUyLC0yNzAyNDI1MDYsMjAxNDg2NTI3MywtMTU0MjM0MTA5
+MCwyNDUyNjE1MTAsLTQ0NjUxMjI3MF19
 -->
