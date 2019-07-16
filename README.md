@@ -1,12 +1,82 @@
 # Java project
 ## Overview
 
+ - [Twitter CLI App](#twitter) - This implements spring boot framework to create tweets and post them on twitter account.
  - [Java Grep App](#grep) - This implements searching for certain regex patterns and return them in a output file.
  - [JDBC](#jdbc) - This implements a use case to understand JDBC connectivity.
- - [Twitter CLI App](#twitter) - This implements spring boot framework to create tweets and post them on twitter account.
+ 
 
  
-<a name="grep"><a/>
+<a name="Twitter"><a/>
+
+# Twitter CLI App
+
+## Introduction
+
+Twitter Command Line Interface allows the user to interact through Post, Show and Delete tweets on twitter. This implementation uses the users developer keys. 
+
+## Usage
+There are three main usages:
+
+- Post Tweet
+-  Show Tweet
+-  Delete Tweet
+
+#### Post Tweet
+This creates a tweet a short message along with the coordinates or geotag. For example:
+
+    Hello this is my First tweet #Toronto #myfirsttweet 50.089:-46.890
+The above tweet will be posted on the twitter.
+#### Show Tweet
+This will enable to view the tweet with the given id and their specified fields which are in a list format. The following are few fields that can be viewed:
+created_at,  hashtags, user_mentions, coordinates, retweet_count, favorited and etc.
+
+#### Delete Tweet
+This will delete the tweet by the given id. We can delete multiple id's tweets by providing them with comma separation.
+
+
+
+
+ 
+
+## Design and Implementation
+
+ - Interface
+ Twitter CLI service class resides in the interface which is implemented by Twitter Service.  It is used to provide the parsed data to it's corresponding methods.
+
+ - service
+ The main logic is implemented here in the twitter service implementation. It validates the objects and passes them to corresponding methods. similarly it validates for the show() the specified fields.
+ - Access
+ This is where the access to REST API of Twitter is handled through get or post HTTP request. Here the developer keys are utilized to set the environment variables.  
+
+
+ - Storage
+ This contains the main method.  The dependencies are implemented here.
+ 
+
+### libraries
+
+    org.apache.http.HttpResponse
+    org.apache.http.util.EntityUtils
+    org.springframework.beans.factory.annotation.Autowired
+    org.springframework.stereotype.Repository
+    java.io.IOException
+    java.io.UnsupportedEncodingException
+    java.net.URI
+    java.net.URISyntaxException
+    java.net.URLEncoder
+    java.nio.charset.StandardCharsets
+    org.springframework.boot.autoconfigure.SpringBootApplication
+
+### Diagram
+![
+](https://lh3.googleusercontent.com/q1HDW4inhwt-AZlgFE0eFdR-wA_Xd4jyUDrZJUnf_8j7ao0PPXuhsfQlp6nNuRTkDgyjlr_rAcU "Twitter API")
+## Enhancement
+- Can have multiple implementations of DAO such as Product, Orders and salesperson
+-  Make the whole process reproduceable and repeatable. 
+
+<a name="grep"> </a>
+
 
 ## Java Grep App
 
@@ -91,86 +161,9 @@ JDBC executor - This is the main method where JDBC connection is called and the 
  - Make it GUI user friendly
  - have multiple connections
 
-# Twitter CLI App
-
-## Introduction
-
-Twitter Command Line Interface allows the user to interact through Post, Show and Delete tweets on twitter. This implementation uses the users developer keys. 
-
-## Usage
-There are three main usages:
-
-- Post Tweet
--  Show Tweet
--  Delete Tweet
-
-#### Post Tweet
-This creates a tweet a short message along with the coordinates or geotag. For example:
-
-    Hello this is my First tweet #Toronto #myfirsttweet 50.089:-46.890
-The above tweet will be posted on the twitter.
-#### Show Tweet
-This will enable to view the tweet with the given id and their specified fields which are in a list format. The following are few fields that can be viewed:
-created_at,  hashtags, user_mentions, coordinates, retweet_count, favorited and etc.
-
-#### Delete Tweet
-This will delete the tweet by the given id. We can delete multiple id's tweets by providing them with comma separation.
-
-
-
-
- 
-
-## Design and Implementation
-
- - Interface
- Twitter CLI service class resides in the interface which is implemented by Twitter Service.  It is used to provide the parsed data to it's corresponding methods.
-
- - service
- The main logic is implemented here in the twitter service implementation. It validates the objects and passes them to corresponding methods. similarly it validates for the show() the specified fields.
- - Access
- This is where the access to REST API of Twitter is handled through get or post HTTP request. Here the developer keys are utilized to set the environment variables.  
-
-
- - Storage
- This contains the main method.  The dependencies are implemented here.
- 
-
-### libraries
-
-    org.apache.http.HttpResponse
-    org.apache.http.util.EntityUtils
-    org.springframework.beans.factory.annotation.Autowired
-    org.springframework.stereotype.Repository
-    java.io.IOException
-    java.io.UnsupportedEncodingException
-    java.net.URI
-    java.net.URISyntaxException
-    java.net.URLEncoder
-    java.nio.charset.StandardCharsets
-    org.springframework.boot.autoconfigure.SpringBootApplication
-
-### Diagram
-![
-](https://lh3.googleusercontent.com/q1HDW4inhwt-AZlgFE0eFdR-wA_Xd4jyUDrZJUnf_8j7ao0PPXuhsfQlp6nNuRTkDgyjlr_rAcU "Twitter API")
-## Enhancement
-- Can have multiple implementations of DAO such as Product, Orders and salesperson
--  Make the whole process reproduceable and repeatable. 
-
-<a name="twitter"> </a>
-
-
-
-
-
-
-
- 
-
-
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4MzUzNTY4LDE4NzM0OTc2MzgsOTU3Mj
-c5NzUyLC0yNzAyNDI1MDYsMjAxNDg2NTI3MywtMTU0MjM0MTA5
-MCwyNDUyNjE1MTAsLTQ0NjUxMjI3MF19
+eyJoaXN0b3J5IjpbLTE0NjI1NjI0MTIsMTg3MzQ5NzYzOCw5NT
+cyNzk3NTIsLTI3MDI0MjUwNiwyMDE0ODY1MjczLC0xNTQyMzQx
+MDkwLDI0NTI2MTUxMCwtNDQ2NTEyMjcwXX0=
 -->
