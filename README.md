@@ -6,7 +6,6 @@
  - [JDBC](#jdbc) - This implements a use case to understand JDBC connectivity.
  
 
- 
 <a name="Twitter"><a/>
 
 # Twitter CLI App
@@ -163,7 +162,7 @@ JDBC executor - This is the main method where JDBC connection is called and the 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjI1NjI0MTIsMTg3MzQ5NzYzOCw5NT
-cyNzk3NTIsLTI3MDI0MjUwNiwyMDE0ODY1MjczLC0xNTQyMzQx
-MDkwLDI0NTI2MTUxMCwtNDQ2NTEyMjcwXX0=
+eyJoaXN0b3J5IjpbLTYzOTIwNjkwMCwxODczNDk3NjM4LDk1Nz
+I3OTc1MiwtMjcwMjQyNTA2LDIwMTQ4NjUyNzMsLTE1NDIzNDEw
+OTAsMjQ1MjYxNTEwLC00NDY1MTIyNzBdfQ==
 -->
