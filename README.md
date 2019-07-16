@@ -94,7 +94,7 @@ JDBC executor - This is the main method where JDBC connection is called and the 
 # Twitter CLI App
 
 ## Introduction
-Tweets are publicly visible by default, but senders can restrict message delivery to only their followers. Users can tweet via the Twitter website, compatible external applications (such as for smartphones or by Short Message Service (SMS) available in certain countries. In this project, the tweets can be created, read and deleted with spring framework implementation and twitter API.  
+Twitter Command Line Interface allows the user to interact through Post, Show and Delete tweets on twitter. 
 
 ## Usage
 The Twitter platform offers access to that corpus of data, via APIs. Each API represents a facet of Twitter, and allows developers to build upon and extend their applications in new and creative ways. We implemented CRD I.e. Create, Read and Delete respectively. 
@@ -142,7 +142,7 @@ The Twitter platform offers access to that corpus of data, via APIs. Each API re
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3MzQ5NzYzOCw5NTcyNzk3NTIsLTI3MD
-I0MjUwNiwyMDE0ODY1MjczLC0xNTQyMzQxMDkwLDI0NTI2MTUx
-MCwtNDQ2NTEyMjcwXX0=
+eyJoaXN0b3J5IjpbMTM1MzMzOTc4NywxODczNDk3NjM4LDk1Nz
+I3OTc1MiwtMjcwMjQyNTA2LDIwMTQ4NjUyNzMsLTE1NDIzNDEw
+OTAsMjQ1MjYxNTEwLC00NDY1MTIyNzBdfQ==
 -->
