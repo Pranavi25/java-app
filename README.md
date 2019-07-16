@@ -111,7 +111,10 @@ This creates a tweet a short message along with the coordinates or geotag. For e
 The above tweet will be posted on the twitter.
 #### Show Tweet
 This will enable to view the tweet with the given id and their specified fields which are in a list format. The following are few fields that can be viewed:
-created_at,  hashtags, user_mentions, coordinates, retweet_count, 
+created_at,  hashtags, user_mentions, coordinates, retweet_count, favorited and etc.
+
+#### Delete Tweet
+This will delete the tweet by the given id. We can delete multiple id's tweets by providing them with comma
 
 
 
@@ -160,7 +163,7 @@ created_at,  hashtags, user_mentions, coordinates, retweet_count,
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTgzNTM0MCwxODczNDk3NjM4LDk1Nz
-I3OTc1MiwtMjcwMjQyNTA2LDIwMTQ4NjUyNzMsLTE1NDIzNDEw
-OTAsMjQ1MjYxNTEwLC00NDY1MTIyNzBdfQ==
+eyJoaXN0b3J5IjpbNTcxNzEwODQyLDE4NzM0OTc2MzgsOTU3Mj
+c5NzUyLC0yNzAyNDI1MDYsMjAxNDg2NTI3MywtMTU0MjM0MTA5
+MCwyNDUyNjE1MTAsLTQ0NjUxMjI3MF19
 -->
