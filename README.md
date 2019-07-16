@@ -110,7 +110,8 @@ This creates a tweet a short message along with the coordinates or geotag. For e
     Hello this is my First tweet #Toronto #myfirsttweet 50.089:-46.890
 The above tweet will be posted on the twitter.
 #### Show Tweet
-This will enable to view the tweet with th
+This will enable to view the tweet with the given id and their specified fields which are in a list format. The following are few fields that can be viewed:
+created_at,  hashtags, user_mentions, coordinates, retweet_count, 
 
 
 
@@ -159,7 +160,7 @@ This will enable to view the tweet with th
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQxNzQ4ODEzLDE4NzM0OTc2MzgsOTU3Mj
-c5NzUyLC0yNzAyNDI1MDYsMjAxNDg2NTI3MywtMTU0MjM0MTA5
-MCwyNDUyNjE1MTAsLTQ0NjUxMjI3MF19
+eyJoaXN0b3J5IjpbLTEyMTgzNTM0MCwxODczNDk3NjM4LDk1Nz
+I3OTc1MiwtMjcwMjQyNTA2LDIwMTQ4NjUyNzMsLTE1NDIzNDEw
+OTAsMjQ1MjYxNTEwLC00NDY1MTIyNzBdfQ==
 -->
