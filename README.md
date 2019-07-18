@@ -21,11 +21,13 @@ There are three main usages:
 -  [Show Tweet](#showtweet)
 -  [Delete Tweet](#deletetweet)
 
+<a name="posttweet"></a>
 #### Post Tweet
 This creates a tweet a short message along with the coordinates or geotag. For example:
 
     Hello this is my First tweet #Toronto #myfirsttweet 50.089:-46.890
 The above tweet will be posted on the twitter.
+<a name="showtweet"></a>
 #### Show Tweet
 This will enable to view the tweet with the given id and their specified fields which are in a list format. The following are few fields that can be viewed:
 created_at,  hashtags, user_mentions, coordinates, retweet_count, favorited and etc.
@@ -37,7 +39,7 @@ created_at,  hashtags, user_mentions, coordinates, retweet_count, favorited and 
     Coordinates: {50.089,-46.890}
     }
     
-
+<a name="deletetweet"></a>
 #### Delete Tweet
 This will delete the tweet by the given id. We can delete multiple id's tweets by providing them with comma separation.
 
@@ -173,7 +175,8 @@ JDBC executor - This is the main method where JDBC connection is called and the 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQyMzc0NTEyLC02MzkyMDY5MDAsMTg3Mz
-Q5NzYzOCw5NTcyNzk3NTIsLTI3MDI0MjUwNiwyMDE0ODY1Mjcz
-LC0xNTQyMzQxMDkwLDI0NTI2MTUxMCwtNDQ2NTEyMjcwXX0=
+eyJoaXN0b3J5IjpbLTE4MDM1MDM1NDYsMzQyMzc0NTEyLC02Mz
+kyMDY5MDAsMTg3MzQ5NzYzOCw5NTcyNzk3NTIsLTI3MDI0MjUw
+NiwyMDE0ODY1MjczLC0xNTQyMzQxMDkwLDI0NTI2MTUxMCwtND
+Q2NTEyMjcwXX0=
 -->
