@@ -40,7 +40,8 @@ created_at,  hashtags, user_mentions, coordinates, retweet_count, favorited and 
 This will delete the tweet by the given id. We can delete multiple id's tweets by providing them with comma separation.
 
     id: 37497900980400
-The above id will be deleted
+The above id associated tweet will be deleted.
+
 
 
 
@@ -170,7 +171,8 @@ JDBC executor - This is the main method where JDBC connection is called and the 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU0MjUyMTk0LC02MzkyMDY5MDAsMTg3Mz
-Q5NzYzOCw5NTcyNzk3NTIsLTI3MDI0MjUwNiwyMDE0ODY1Mjcz
-LC0xNTQyMzQxMDkwLDI0NTI2MTUxMCwtNDQ2NTEyMjcwXX0=
+eyJoaXN0b3J5IjpbLTE1MjE3MTg1MzcsLTYzOTIwNjkwMCwxOD
+czNDk3NjM4LDk1NzI3OTc1MiwtMjcwMjQyNTA2LDIwMTQ4NjUy
+NzMsLTE1NDIzNDEwOTAsMjQ1MjYxNTEwLC00NDY1MTIyNzBdfQ
+==
 -->
