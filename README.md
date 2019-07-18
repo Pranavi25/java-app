@@ -30,10 +30,12 @@ The above tweet will be posted on the twitter.
 This will enable to view the tweet with the given id and their specified fields which are in a list format. The following are few fields that can be viewed:
 created_at,  hashtags, user_mentions, coordinates, retweet_count, favorited and etc.
 
+    {
     Created_at: 2019-07-07
-    hashtags: Toronto,myfirsttweet
+    hashtags: {Toronto,myfirsttweet}
     user_mentions: null
-    Coordinates: 50.089,-46.890
+    Coordinates: {50.089,-46.890}
+    }
     
 
 #### Delete Tweet
@@ -171,8 +173,7 @@ JDBC executor - This is the main method where JDBC connection is called and the 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjE3MTg1MzcsLTYzOTIwNjkwMCwxOD
-czNDk3NjM4LDk1NzI3OTc1MiwtMjcwMjQyNTA2LDIwMTQ4NjUy
-NzMsLTE1NDIzNDEwOTAsMjQ1MjYxNTEwLC00NDY1MTIyNzBdfQ
-==
+eyJoaXN0b3J5IjpbLTI5OTA4NTkyNywtNjM5MjA2OTAwLDE4Nz
+M0OTc2MzgsOTU3Mjc5NzUyLC0yNzAyNDI1MDYsMjAxNDg2NTI3
+MywtMTU0MjM0MTA5MCwyNDUyNjE1MTAsLTQ0NjUxMjI3MF19
 -->
