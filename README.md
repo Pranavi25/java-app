@@ -17,9 +17,9 @@ Twitter Command Line Interface allows the user to interact through Post, Show an
 ## Usage
 There are three main usages:
 
-- Post Tweet
--  Show Tweet
--  Delete Tweet
+-  [Post Tweet](#posttweet)
+-  [Show Tweet](#showtweet)
+-  [Delete Tweet](#deletetweet)
 
 #### Post Tweet
 This creates a tweet a short message along with the coordinates or geotag. For example:
@@ -173,7 +173,7 @@ JDBC executor - This is the main method where JDBC connection is called and the 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5OTA4NTkyNywtNjM5MjA2OTAwLDE4Nz
-M0OTc2MzgsOTU3Mjc5NzUyLC0yNzAyNDI1MDYsMjAxNDg2NTI3
-MywtMTU0MjM0MTA5MCwyNDUyNjE1MTAsLTQ0NjUxMjI3MF19
+eyJoaXN0b3J5IjpbMzQyMzc0NTEyLC02MzkyMDY5MDAsMTg3Mz
+Q5NzYzOCw5NTcyNzk3NTIsLTI3MDI0MjUwNiwyMDE0ODY1Mjcz
+LC0xNTQyMzQxMDkwLDI0NTI2MTUxMCwtNDQ2NTEyMjcwXX0=
 -->
